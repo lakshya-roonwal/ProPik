@@ -1,12 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import ProfilePicture from "./components/ProfilePicture";
-import { Link, Route, Routes } from "react-router-dom";
-import { Chip, Button } from "@nextui-org/react";
+import { Button, Chip } from "@nextui-org/react";
+import { lazy } from 'react';
 import { motion } from "framer-motion";
+import { Link, Route, Routes } from "react-router-dom";
+import "./App.css";
 import HeroSectionSVG from "./components/HeroSectionSVG";
+const ProfilePicture =lazy(()=> import("./components/ProfilePicture"));
 
 function App() {
   return (
