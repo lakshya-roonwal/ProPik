@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import AvatarEditor from "react-avatar-editor";
 import { MdOutlineZoomOut } from "react-icons/md";
 import { MdZoomIn } from "react-icons/md";
@@ -177,7 +177,7 @@ const ProfilePicture = () => {
             <div className="grid grid-cols-3 gap-4 mb-8">
               {dtLogoArray.map((logo) => {
                 return (
-                  <div className="p-2">
+                  <div className="p-2" key={logo}>
                     <Button
                       variant="solid"
                       onClick={() => {
