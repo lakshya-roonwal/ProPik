@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSectionSVG = () => {
   return (
-    <div>HeroSectionSVG</div>
+    <div>HeroSectionSVG to be build soon</div>
   )
 }
 

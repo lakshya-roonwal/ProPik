@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import ProfilePicture from "./components/ProfilePicture";
 import { Link, Route, Routes } from "react-router-dom";
-import { Button } from "@nextui-org/react";
+import { Chip, Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import HeroSectionSVG from "./components/HeroSectionSVG";
 
@@ -37,10 +37,11 @@ function App() {
                         <span>Propik </span>: Amplify Your Brand Presence on
                         Twitter
                       </motion.h1>
-                      <motion.p className="max-[500px] text-gray-500 md:text-xl dark:text-gray-400"
-                      initial={{ opacity: 0, y: 100 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.25 }}
+                      <motion.p
+                        className="max-[500px] text-gray-500 md:text-xl dark:text-gray-400"
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.25 }}
                       >
                         Welcome to Propik, the ultimate tool for members of
                         Dominate Twitter! With Propik, effortlessly enhance your
@@ -50,17 +51,17 @@ function App() {
                     </div>
                     <div className="flex flex-col items-start space-y-2">
                       <div className="w-full rounded-lg border-dashed border-2 border-gray-200 bg-white p-4 text-sm shadow-sm dark:border-gray-800 dark:bg-gray-950 dark:placeholder-gray-300">
-                        <HeroSectionSVG/>
+                        <HeroSectionSVG />
                       </div>
                       <p className="text-xs text-gray-500"></p>
-                      <motion.div 
+                      <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 1,duration: 0.5 }}
+                        transition={{ delay: 1, duration: 0.5 }}
                       >
-                      <Link to={"/upload"}>
-                        <Button color="primary">Get Started</Button>
-                      </Link>
+                        <Link to={"/upload"}>
+                          <Button color="primary">Get Started</Button>
+                        </Link>
                       </motion.div>
                     </div>
                   </div>
@@ -78,7 +79,9 @@ function App() {
               href={"https://twitter.com/Lakshya_roonwal"}
               className="text-blue-500 hover:text-blue-700"
             >
+            <Chip className="mx-2" color="primary">
               @Lakshya_roonwal{" "}
+            </Chip>
             </a>
             For{" "}
             <a
@@ -86,7 +89,10 @@ function App() {
               href={"https://twitter.com/dominateXclub"}
               className="text-blue-500 hover:text-blue-700"
             >
+             <Chip className="mx-2" color="primary">
+
               @dominateXclub
+             </Chip>
             </a>
           </p>
         </div>
