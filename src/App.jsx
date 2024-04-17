@@ -69,6 +69,7 @@ function App() {
             }
           />
           <Route exact path="/upload" element={<ProfilePicture />} />
+          <Route path="/test" element={<h1>Hello World</h1>} />
         </Routes>
         <div className=" mb-4 flex flex-col items-center">
           <p>
