@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import AvatarEditor from "react-avatar-editor";
-import html2canvas from "html2canvas";
 import { MdOutlineZoomOut } from "react-icons/md";
 import { MdZoomIn } from "react-icons/md";
 import ImageOverlay from "./ImageOverlay";
@@ -14,11 +13,11 @@ const ProfilePicture = () => {
   const [croppedImage, setCroppedImage] = useState(null);
   const [modalZoomSlider, setModalZoomSlider] = useState(1.2);
   const [dtLogoArray, setDtLogoArray] = useState([1, 2, 3, 4, 5, 6]);
-  const [dtLogo, setDtLogo] = useState("/src/assets/dtlogo2.png");
+  const [dtLogo, setDtLogo] = useState("/dtlogo2.png");
 
   const handleDtLogoChange = (logoNo) => {
     console.log(logoNo);
-    setDtLogo(`/src/assets/dtlogo${logoNo}.png`);
+    setDtLogo(`/dtlogo${logoNo}.png`);
   };
 
   const handleDeleteImage = () => {
@@ -186,7 +185,7 @@ const ProfilePicture = () => {
                       }}
                     >
                       <img
-                        src={`/src/assets/dtlogo${logo}.png`}
+                        src={`/dtlogo${logo}.png`}
                         className="bg-transparent"
                       />
                     </Button>
