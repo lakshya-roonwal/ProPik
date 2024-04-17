@@ -20,8 +20,7 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route
-          exact 
+          <Route 
           path="/"
             element={
               <section className="w-full py-12 ">
@@ -68,7 +67,7 @@ function App() {
               </section>
             }
           />
-          <Route exact path="upload" element={<ProfilePicture />} />
+          <Route path="upload" element={<ProfilePicture />} />
           <Route path="test" element={<h1>Hello World</h1>} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
