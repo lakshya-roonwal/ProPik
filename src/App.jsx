@@ -68,8 +68,8 @@ function App() {
               </section>
             }
           />
-          <Route exact path="/upload" element={<ProfilePicture />} />
-          <Route path="/test" element={<h1>Hello World</h1>} />
+          <Route exact path="upload" element={<ProfilePicture />} />
+          <Route path="test" element={<h1>Hello World</h1>} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
         <div className=" mb-4 flex flex-col items-center">
