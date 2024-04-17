@@ -23,7 +23,8 @@ function App() {
         </div>
         <Routes>
           <Route
-            path="/"
+          exact 
+          path="/"
             element={
               <section className="w-full py-12 ">
                 <div className="container flex flex-col items-center justify-center px-4 space-y-4 md:px-6 md:flex-row md:space-y-0 lg:space-x-6">
@@ -69,7 +70,7 @@ function App() {
               </section>
             }
           />
-          <Route path="/upload" element={<ProfilePicture />} />
+          <Route exact path="/upload" element={<ProfilePicture />} />
         </Routes>
         <div className=" mb-4 flex flex-col items-center">
           <p>
