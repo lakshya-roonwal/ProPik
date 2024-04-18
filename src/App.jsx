@@ -57,9 +57,11 @@ function App() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 0.5 }}
                       >
+                          <Button color="primary">
                         <Link to={"upload"}>
-                          <Button color="primary">Get Started</Button>
+                          Get Started
                         </Link>
+                          </Button>
                       </motion.div>
                     </div>
                   </div>
