@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HeroSectionSVG from "./components/HeroSectionSVG";
-const ProfilePicture =lazy(()=> import("./components/ProfilePicture"));
+import ProfilePicture from "./components/ProfilePicture";
 
 function App() {
   return (
@@ -58,7 +58,7 @@ function App() {
                         transition={{ delay: 1, duration: 0.5 }}
                       >
                           <Button color="primary">
-                        <Link to={"upload"}>
+                        <Link to={"/upload"}>
                           Get Started
                         </Link>
                           </Button>
@@ -69,7 +69,7 @@ function App() {
               </section>
             }
           />
-          <Route path="upload" element={<ProfilePicture />} />
+          <Route path="/upload" element={<ProfilePicture />} />
           <Route path="test" element={<h1>Hello World</h1>} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
