@@ -98,7 +98,7 @@ const ProfilePicture = () => {
       <div className="bg-white p-8 shadow-lg rounded-lg max-w-4xl w-full">
         <div className="grid sm:grid-cols-2 gap-12">
           <div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center my-2 px-4">
               <h2 className="text-xl font-bold mb-4">Preview</h2>
               <Button isIconOnly onClick={handleDeleteImage}>
                 <MdDelete size={"25px"} />
@@ -142,7 +142,7 @@ const ProfilePicture = () => {
                 </div>
               </div>
             )}
-            <div className="sm:min-h-[400px] border p-4 flex items-center justify-center">
+            <div className="sm:min-h-[400px] px-4 flex items-center justify-center">
               {image ? (
                 <div id="profile-pic" className="max-w-[400px]">
                   <ImageOverlay

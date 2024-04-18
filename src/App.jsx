@@ -1,5 +1,4 @@
-import { Button, Chip } from "@nextui-org/react";
-import { lazy } from 'react';
+import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -20,8 +19,8 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route 
-          path="/"
+          <Route
+            path="/"
             element={
               <section className="w-full py-12 ">
                 <div className="container flex flex-col items-center justify-center px-4 space-y-4 md:px-6 md:flex-row md:space-y-0 lg:space-x-6">
@@ -57,11 +56,9 @@ function App() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 0.5 }}
                       >
-                          <Button color="primary">
-                        <Link to={"/upload"}>
-                          Get Started
-                        </Link>
-                          </Button>
+                        <Button color="primary">
+                          <Link to={"/upload"}>Get Started</Link>
+                        </Button>
                       </motion.div>
                     </div>
                   </div>
@@ -70,7 +67,7 @@ function App() {
             }
           />
           <Route path="/upload" element={<ProfilePicture />} />
-          <Route path="test" element={<h1>Hello World</h1>} />
+          <Route path="/test" element={<h1>Hello World</h1>} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
         <div className=" mb-4 flex flex-col items-center">

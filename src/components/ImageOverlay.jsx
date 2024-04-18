@@ -41,7 +41,7 @@ const ImageOverlay = ({ mainImage, overlayImage }) => {
   }, [mainImage, overlayImage]);
 
   return (
-    <div className='overflow-hidden rounded-full'>
+    <div className='overflow-hidden rounded-full border'>
       {canvas && <img src={canvas.toDataURL("image/png")} alt="Combined Image" />}
     </div>
   );
