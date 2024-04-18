@@ -76,23 +76,18 @@ function App() {
             Made By{" "}
             <a
               target="__blank"
-              href={"https://twitter.com/Lakshya_roonwal"}
-              className="text-blue-500 hover:text-blue-700"
+              href={"https://twitter.com/Lakshyaroonwal"}
+              className="text-primary hover:primary-light"
             >
-            <Chip className="mx-2" color="primary">
-              @Lakshya_roonwal{" "}
-            </Chip>
+              @Lakshyaroonwal{" "}
             </a>
             For{" "}
             <a
               target="__blank"
               href={"https://twitter.com/dominateXclub"}
-              className="text-blue-500 hover:text-blue-700"
+              className="text-primary hover:primary-light"
             >
-             <Chip className="mx-2" color="primary">
-
               @dominateXclub
-             </Chip>
             </a>
           </p>
         </div>
