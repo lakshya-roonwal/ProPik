@@ -45,12 +45,6 @@ function App() {
                         Twitter game by adding the official Dominate Twitter
                         logo to your images.
                       </motion.p>
-                    </div>
-                    <div className="flex flex-col items-start space-y-2">
-                      <div className="w-full rounded-lg border-dashed border-2 border-gray-200 bg-white p-4 text-sm shadow-sm dark:border-gray-800 dark:bg-gray-950 dark:placeholder-gray-300">
-                        <HeroSectionSVG />
-                      </div>
-                      <p className="text-xs text-gray-500"></p>
                       <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -61,13 +55,18 @@ function App() {
                         </Button>
                       </motion.div>
                     </div>
+                    <div className="flex flex-col items-start space-y-2">
+                      <div className="w-full rounded-lg border-dashed border-2 border-gray-200 bg-white p-4 text-sm shadow-sm">
+                        <HeroSectionSVG />
+                      </div>
+                      <p className="text-xs text-gray-500"></p>
+                    </div>
                   </div>
                 </div>
               </section>
             }
           />
           <Route path="/upload" element={<ProfilePicture />} />
-          <Route path="/test" element={<h1>Hello World</h1>} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
         <div className=" mb-4 flex flex-col items-center">
