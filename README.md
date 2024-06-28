@@ -42,7 +42,7 @@ Start the server
 - React
 - React Icons
 - Framer-motion
-- NextUI
+- Next UI
 - Vercel
 
 
