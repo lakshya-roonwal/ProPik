@@ -34,6 +34,8 @@ Start the server
 
 ```bash
   npm run dev
+or
+pnpm dev
 ```
 
 
